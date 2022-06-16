@@ -126,4 +126,68 @@ h1, h2, h3, h4, h5, h6, p {
   transition: box-shadow 0.2 ease-in, -webkit-box-shadow 0.2 ease-in;
 }
 
+.card__header {
+  padding: 4px 10px;
+  height: 55px;
+  border-bottom: 1px solid #c1c1c1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__body {
+  padding: 20px 35px;
+}
+.card__body p {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+}
+
+.card__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+}
+
+.card__title + * {
+  margin-top: 7px;
+}
+
+.cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.cards-wrapper > * {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.cards-wrapper + * {
+  margin-top: 30px;
+}
+
 /*# sourceMappingURL=main.css.map */
